@@ -4,7 +4,7 @@
 {% load staticfiles %}
 <head>
 	{% block head %}
-	<title>Egret - HTML5 landing page</title>
+	<title>KALP - hope for new world</title>
 	
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,24 +36,33 @@
 			<div class="section-overlay"></div>
 			<div class="container home">
 				<div class="row">
-					<h1 class="well-come">Fly like Egret</h1>
+					<h1 class="well-come"><b>Charity</b> is the key</h1>
 					
 					<div class="col-md-8 col-md-offset-2">
-						<p class="intro-message">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet qui dolorem</p>
+						<p class="intro-message">To living the virtuos LIFE</p>
 						
 						<div class="home-buttons">
-							<a href="#" class="fancy-button button-line button-white vertical">
-								Learn more
+							<a href="#section-services" class="fancy-button button-line button-white vertical">
+								About Us
 								<span class="icon">
 									<i class="fa fa-gear"></i>
 								</span>
 							</a>
+							{% if user.is_authenticated %}
+							<a href="#section-feature" class="fancy-button button-line button-white zoom">
+								See Post
+								<span class="icon">
+									<i class="fa fa-leaf"></i>
+								</span>
+							</a>
+							{% else %}
 							<a href="../login" class="fancy-button button-line button-white zoom">
 								Login Now
 								<span class="icon">
 									<i class="fa fa-leaf"></i>
 								</span>
 							</a>
+							{% endif %}
 						</div>
 					</div>
 				</div>
@@ -240,17 +249,16 @@
 			<div class="row">
 			
 				<div class="col-md-10 col-md-offset-1 center section-title">
-					<h3>What we do best</h3>
+					<h3>THE CHILDREN NEED US</h3>
 				</div>
 			
 				<!-- Single Service Starts -->
 				<div class="col-md-6 col-sm-6 service animated" data-animation="fadeInLeft" data-animation-delay="700">
 					<span class="service-icon center"><i class="icon icon-basic-book-pencil fa-3x"></i></span>
 					<div class="service-desc">
-						<h4 class="service-title color-scheme">Clean Design</h4>
+						<h4 class="service-title color-scheme">CHILDREN NEED STUDY</h4>
 						<p class="service-description justify">
-							Cillum laboris consequat, qui elit retro next level skateboard freegan hella.
-							Cillum laboris consequat, qui elit retro next level skateboard freegan hella.
+							Education is the road that children follow to reach their full potential in life.
 						</p>
 					</div>
 				</div>
@@ -260,10 +268,9 @@
 				<div class="col-md-6 col-sm-6 service animated" data-animation="fadeInUp" data-animation-delay="700">
 					<span class="service-icon center"><i class="icon icon-basic-paperplane fa-3x"></i></span>
 					<div class="service-desc">
-						<h4 class="service-title color-scheme">Full responsive</h4>
+						<h4 class="service-title color-scheme">CHILDREN NEED PLAY</h4>
 						<p class="service-description justify">
-							Cillum laboris consequat, qui elit retro next level skateboard freegan hella.
-							Cillum laboris consequat, qui elit retro next level skateboard freegan hella.
+							It is vital for their physical and emotional development and for their social learning
 						</p>
 					</div>
 				</div>
@@ -273,10 +280,9 @@
 				<div class="col-md-6 col-sm-6 service animated" data-animation="fadeInRight" data-animation-delay="700">
 					<span class="service-icon center"><i class="icon icon-basic-accelerator fa-3x"></i></span>
 					<div class="service-desc">
-						<h4 class="service-title color-scheme">Ajax contact form</h4>
+						<h4 class="service-title color-scheme">CHILDREN NEED FOOD</h4>
 						<p class="service-description justify">
-							Cillum laboris consequat, qui elit retro next level skateboard freegan hella.
-							Cillum laboris consequat, qui elit retro next level skateboard freegan hella.
+							Children require good nutrition to build healthy bodies and be the best they can be.
 						</p>
 					</div>
 				</div>
@@ -286,10 +292,9 @@
 				<div class="col-md-6 col-sm-6 service animated" data-animation="fadeInUp" data-animation-delay="700">
 					<span class="service-icon center"><i class="icon icon-basic-lightbulb fa-3x"></i></span>
 					<div class="service-desc">
-						<h4 class="service-title color-scheme">Mailchimp ready</h4>
+						<h4 class="service-title color-scheme">CHILDREN NEED CARE</h4>
 						<p class="service-description justify">
-							Cillum laboris consequat, qui elit retro next level skateboard freegan hella.
-							Cillum laboris consequat, qui elit retro next level skateboard freegan hella.
+							It helps them grow up happy, healthy and to enjoy the world around them.
 						</p>
 					</div>
 				</div>

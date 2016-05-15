@@ -14,13 +14,7 @@ def index(request):
 	if request.method == 'GET':
 		return render(request,"index.html",{})
 
-	# if request.method == 'POST':
-	# 	try:
-	# 		username = request.POST['username']
-	# 		password = request.POST['password']
-	# 		print username, password
-	# 	except:
-	# 		print "here"
+	
 
 @csrf_exempt
 def login(request):

@@ -11,16 +11,17 @@ $(window).load(function() {
 /* ----------------------------- 
 Backgroung slider
 ----------------------------- */
-$(window).ready(function() {
-	'use strict';
-	$.vegas('slideshow', {
-	  backgrounds:[
-		{ src:"{% static '../images/bg-slider/bg-1.jpg' %}", fade:1000 },
-		{ src:"{% static 'images/bg-slider/bg-2.jpg' %}", fade:1000 },
-		{ src:"{% static 'images/bg-slider/bg-3.jpg' %}", fade:1000 }
-	  ]
-	})();
-});
+// $(window).ready(function() {
+// 	'use strict';
+// 	$.vegas('slideshow', {
+// 	  backgrounds:[
+// 		{ src:"{% static 'images/bg-slider/bg-1.jpg' %}", fade:1000 },
+// 		{ src:"{% static 'images/bg-slider/bg-2.jpg' %}", fade:1000 },
+// 		{ src:"{% static 'images/bg-slider/bg-3.jpg' %}", fade:1000 },
+// 		{ src:"{% static 'images/bg-slider/bg-4.jpg' %}", fade:1000 }
+// 	  ]
+// 	})();
+// });
 
 
 				

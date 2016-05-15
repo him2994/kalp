@@ -42,10 +42,11 @@
 </head>
 
 <body>
-
+<!-- {% if not user.is_authenticated %}
     <section id="preloader">
         <div class="loading-circle fa-spin"></div>
     </section>
+{% endif %} -->
 
     <div id="header" class="header-section">
         <!-- sticky-bar Starts-->
@@ -61,14 +62,16 @@
                                     <span class="icon-bar"></span>
                             </button>
                             <!--=== Site Name ===-->
-                            <a class="site-name navbar-brand" href="#"><span>E</span>gret</a>
+                            <a class="site-name navbar-brand" href="#"><span>K</span>alp - hope of better world</a>
                         </div>
                         
                         <!-- Main Navigation menu Starts -->
                         <div class="collapse navbar-collapse navbar-responsive-collapse">
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="current"><a href="#header">Home</a></li>
-                                <li><a href="#section-feature">Features</a></li>
+                                <li><a href="#">Home</a></li>
+                                {% if user.is_authenticated %}
+                                <li><a href="#section-feature">Recent Projects</a></li>
+                                {% endif %}
                                 <li><a href="#section-services">Services</a></li>
                                 <li><a href="#step-1">Work Flow</a></li>
                                 <li><a href="#section-screenshots">Screenshots</a></li>
@@ -120,15 +123,16 @@
 <script type="text/javascript" src="{% static 'js/custom.js' %}" ></script>
 <script type="text/javascript">
     $(window).ready(function() {
-        'use strict';
-        $.vegas('slideshow', {
-          backgrounds:[
-            { src:"{% static 'images/bg-slider/bg-1.jpg' %}", fade:1000 },
-            { src:"{% static 'images/bg-slider/bg-2.jpg' %}", fade:1000 },
-            { src:"{% static 'images/bg-slider/bg-3.jpg' %}", fade:1000 }
-          ]
-        })();
-    });
+    'use strict';
+    $.vegas('slideshow', {
+      backgrounds:[
+        { src:"{% static 'images/bg-slider/bg-1.jpg' %}", fade:1000 },
+        { src:"{% static 'images/bg-slider/bg-2.jpg' %}", fade:1000 },
+        { src:"{% static 'images/bg-slider/bg-3.jpg' %}", fade:1000 },
+        { src:"{% static 'images/bg-slider/bg-4.jpg' %}", fade:1000 }
+      ]
+    })();
+}); 
 </script>
       
      {% block scripts %}
