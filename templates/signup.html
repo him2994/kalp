@@ -5,7 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 	{% block head %}
-	<title>Login Page</title>
+	<title>SignUp Page</title>
 	{% endblock %}
 </head>
 <body>
@@ -17,28 +17,34 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="col-md-10 col-md-offset-1 center section-title">
-						<h3>Login </h3>
+						<h3>SignUp</h3>
 					</div>
 					
 					<div class="confirmation">
 						<p><span class="fa fa-check"></span></p>
 					</div>
 					
-					<form class="contact-form support-form" method="POST" action="http://localhost:8000/login">
+					<form class="contact-form support-form" method="POST" action="http://localhost:8000/signup">
 						
 						<div class="col-lg-12">
-							<input id="username" class="input-field form-item field-name" type="text" required="required" name="username" placeholder="User Id" />
+							<input id="username" class="input-field form-item field-name" type="text" required="required" name="username" placeholder="Enter Username" />
+
+							<input id="name" class="input-field form-item field-name" type="text" required="required" name="name" placeholder="Enter Name" />
+
+							<input id="email" class="input-field form-item field-name" type="text" required="required" name="email" placeholder="Enter Email" />
 
 							<input id="password" class="input-field form-item field-email" type="password" required="required" name="password" placeholder="Password" />
 
+							<input id="confirm_password" class="input-field form-item field-email" type="password" required="required" name="confirm_password" placeholder="Confirm Password" />
+
+
 						</div>
 						<button type="submit" class="fancy-button button-line button-white large zoom subform">
-							Log In
+							SignUp
 							<span class="icon">
 								<i class="fa fa-paper-plane-o"></i>
 							</span>
 						</button>
-						<a style="text-align :center;" href="../signup"><h4 >Sign Up</h4></a>
 					</form>
 				</div>
 			</div>
